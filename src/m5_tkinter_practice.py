@@ -32,7 +32,7 @@ def main():
     button1 = ttk.Button(frame, text='Button 1')
     button1['command'] = (lambda: foo())
     button1.grid()
-    
+
     def foo():
         print("Hello")
 

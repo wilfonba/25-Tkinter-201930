@@ -13,7 +13,7 @@ from tkinter import ttk
 def main():
     """ Constructs a GUI that will be used MUCH later to control EV3. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Follow along with the video to make a remote control GUI
+    # Done: 2. Follow along with the video to make a remote control GUI
     # For every grid() method call you will add a row and a column argument
     # -------------------------------------------------------------------------
 
@@ -46,7 +46,7 @@ def main():
     root.bind('<Left>', lambda event: print("Left key"))
 
     stop_button = ttk.Button(main_frame, text="Stop")
-    stop_button.grid()
+    stop_button.grid(row=7, column=0)
     stop_button['command'] = lambda: print("Stop button")
     root.bind('<space>', lambda event: print("Stop key"))
 
@@ -61,22 +61,22 @@ def main():
     root.bind('<Down>', lambda event: print("Back key"))
 
     up_button = ttk.Button(main_frame, text="Up")
-    up_button.grid(row=5, column=0, columnspan=1)
+    up_button.grid(row=5, column=0, columnspan=2)
     up_button['command'] = lambda: print("Up button")
     root.bind('<u>', lambda event: print("Up key"))
 
     down_button = ttk.Button(main_frame, text="Down")
-    down_button.grid(row=6, column=0, columnspan=1)
+    down_button.grid(row=6, column=0, columnspan=2)
     down_button['command'] = lambda: print("Down button")
     root.bind('<j>', lambda event: print("Down key"))
 
     # Buttons for quit and exit
     q_button = ttk.Button(main_frame, text="Quit")
-    q_button.grid()
+    q_button.grid(row=7, column=1)
     q_button['command'] = lambda: print("Quit button")
 
     e_button = ttk.Button(main_frame, text="Exit")
-    e_button.grid()
+    e_button.grid(row=8, column=0, columnspan=2)
     e_button['command'] = lambda: exit()
 
     root.mainloop()
