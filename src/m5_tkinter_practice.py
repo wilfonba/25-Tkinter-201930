@@ -109,6 +109,13 @@ def main():
     # TODO: 8. As time permits, do other interesting GUI things!
     # -------------------------------------------------------------------------
 
+    canvas = tkinter.Canvas()
+    canvas.grid()
+
+    photo = tkinter.PhotoImage(file='python powered.png')
+    photo.grid()
+
+
     root.mainloop()
 
 # -----------------------------------------------------------------------------
