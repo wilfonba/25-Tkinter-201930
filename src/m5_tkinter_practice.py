@@ -106,15 +106,12 @@ def main():
         return
 
     # -------------------------------------------------------------------------
-    # TODO: 8. As time permits, do other interesting GUI things!
+    # Done: 8. As time permits, do other interesting GUI things!
     # -------------------------------------------------------------------------
 
-    canvas = tkinter.Canvas()
-    canvas.grid()
-
     photo = tkinter.PhotoImage(file='python powered.png')
-    photo.grid()
-
+    button3 = ttk.Button(frame, image=photo)
+    button3.grid()
 
     root.mainloop()
 
